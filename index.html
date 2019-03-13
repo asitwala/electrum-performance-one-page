@@ -26,9 +26,24 @@
             src="static/logo.svg">
           <h2 class="logo-text">ELECTRUM PERFORMANCE</h2>
         </div>
-        <p>Electrum Performance is no longer available. We'd like to thank all of our subscribers for trying us out, and we have issued refunds as applicable. If you have any questions, please contact us at 
-          <a class="contact" 
-            href="mailto:electrumperformance@gmail.com">electrumperformance@gmail.com</a>.</p>
+
+        <p class="header-message">ELECTRUMPERFORMANCE.COM IS NOW SHUT DOWN</p>
+
+        <div class="long-message-container">
+          <p>Dear ElectrumPerformance.com Members,</p>
+
+          <p>In case you have missed our emails, we’ve decided to shut down the site and remake it from scratch, offering a better client experience.</p>
+
+          <p>ElectrumPerformance.com was our first major online project. We put a lot of work into it and appreciate every member who has signed up for our services, however, the more we've learned and the more feedback we've received, the more we've come to realize that we can do better.</p>
+
+          <p>We apologize for the inconvenience, and if you have any questions or concerns please feel free to reach out to   <a class="contact" 
+              href="mailto:electrumperformance@gmail.com">electrumperformance@gmail.com</a>.</p>
+
+          <p>Thank you,</p>
+
+          <p>Electrum Performance Staff</p>
+        </div>
+
       </div>
     </div>
     
@@ -54,22 +69,33 @@
     }
 
     .app {
-      display: flex;
       height: 100%;
       width: 100%;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
+      padding: 60px 36px 24px 36px;
     }
 
     .app-container {
       width: 70%;
+      margin: 0 auto;
     }
 
-    .app-container p {
-      font-size: 18px;
-      line-height: 2;
+    .header-message {
+      margin: 28px 0;
       text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .long-message-container {
+      padding-bottom: 36px;
+    }
+
+    .long-message-container p {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: left;
+      margin: 0px;
+      margin-bottom: 16px;
     }
 
     .logo {
@@ -77,11 +103,13 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e4e4e4;
     }
 
     .logo-img {
-      height: 150px;
-      width: 110px;
+      height: 100px;
+      width: 73px;
       margin: 0 24px;
       display: block;
     }
@@ -101,21 +129,9 @@
     }
 
     /* Mobile Responsiveness */
-    @media only screen and (max-width: 400px) {
-      html, body {
-        height: auto;
-      }
-
-      .app {
-        min-height: 600px;
-      }
-
+    @media only screen and (max-width: 600px) {
       .app-container {
         width: 100%;
-      }
-
-      .logo-img {
-        height: 100px;
       }
 
       .logo-text {
